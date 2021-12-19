@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Internet shop of jewellery, jewellerry of solid gold, silver or leather, jewellerry contains precious and semiprecious stones and crystals.">
+    <link rel="preload" href="fonts/Poppins-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Poppins-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Poppins-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/CormorantGaramond-Regular.woff2" type="font/woff2" as="font"
+        crossorigin="anonymous">
+    <link rel="preload" href="fonts/CormorantGaramond-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" type="font/woff2" as="font"
+        crossorigin="anonymous">
+    <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Jewellery shop login page</title>
+</head>
+
+<body class="page">
+    <header class="page-header page-header--nojs">
+        <div class="page-header__search search">
+            <button type="submit" class="search__button"><span class="visually-hidden">Поиск по странице</span></button>
+            <input type="text" placeholder="Type here to search">
+        </div>
+        <a class="page-header__logo" href="index.html">
+            <img src="img/icon-logo.svg" width="66" height="66" alt="Go to main page of interner-shop of jewellery CH">
+        </a>
+        <a class="page-header__login" href="#">Login</a>
+        <a class="page-header__cart" href="#">Cart</a>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Jewellery shop login</h1>
+        <section class="login login--opened">
+            <div class="modal">
+                <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
+                    <h2>Log In</h2>
+                    <div class="login-form__field">
+                        <label class="visually-hidden" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Your E-mail" required="">
+                    </div>
+                    <div class="login-form__field">
+                        <label class="visually-hidden" for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" required="">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                    <button class="login-form__button button button--primary" type="submit">Log In</button>
+                    <p class="login-form__text">Don’t have an account?<a href="#">Sign up</a></p>
+                </form>
+                <button class="modal__close-button" aria-label="Close"></button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
