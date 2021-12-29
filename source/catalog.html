@@ -22,48 +22,55 @@
 
 <body class="page">
     <header class="page-header page-header--nojs">
-        <div class="page-header__search search">
-            <button type="submit" class="search__button"><span class="visually-hidden">Поиск по странице</span></button>
-            <input type="text" placeholder="Type here to search">
-        </div>
-        <a class="page-header__logo" href="index.html">
-            <img src="img/icon-logo.svg" width="66" height="66" alt="Go to main page of interner-shop of jewellery CH">
-        </a>
-        <a class="page-header__login" href="login.html">Login</a>
-        <a class="page-header__cart" href="cart.html">Cart</a>
-        <nav class="page-header__nav main-nav main-nav--no-js">
+        <div class="container">
+          <div class="page-header__top-nav">
+            <div class="page-header__search search">
+              <button type="submit" class="search__button"><span class="visually-hidden">Поиск по странице</span></button>
+              <input type="text" placeholder="Type here to search">
+            </div>
+            <a class="page-header__logo" href="index.html">
+              <img src="img/icon-logo.svg" width="66" height="66" alt="Main page of interner-shop of jewellery CH">
+            </a>
+            <div class="page-header__user-menu">
+              <a class="page-header__login" href="login.html">Login</a>
+              <a class="page-header__cart" href="cart.html">Cart</a>
+            </div>
+          </div>
+    
+          <nav class="page-header__main-nav main-nav main-nav--no-js">
             <ul class="main-nav__list main-nav__list--no-js">
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">What’s new</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Chokers</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Necklaces</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Rings</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Earrings</a>
-                </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">What’s new</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Chokers</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Necklaces</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Rings</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Earrings</a>
+              </li>
             </ul>
-            <ul class="main-nav__list main-nav__list--no-js about-list">
-                <li class="about-list__item">
-                    <a class="about-list__link" href="#">About CH</a>
-                </li>
-                <li class="about-list__item">
-                    <a class="about-list__link" href="#">Stores & Hours</a>
-                </li>
-                <li class="about-list__item">
-                    <a class="about-list__link" href="#">Contact Us</a>
-                </li>
+            <ul class="main-nav__list main-nav__list--no-js main-nav__about-list  about-list">
+              <li class="about-list__item">
+                <a class="about-list__link" href="#">About CH</a>
+              </li>
+              <li class="about-list__item">
+                <a class="about-list__link" href="#">Stores & Hours</a>
+              </li>
+              <li class="about-list__item">
+                <a class="about-list__link" href="#">Contact Us</a>
+              </li>
             </ul>
             <button class="main-nav__toggle main-nav__toggle--no-js" type="button"></button>
-        </nav>
-    </header>
-    <main>
+          </nav>
+        </div>
+      </header>
+      <main class="page-main">
         <h1 class="visually-hidden">Catalog of jewellery shop CH</h1>
         <section class="promo catalog-promo">
             <div class="promo__info catalog-promo__info">
@@ -373,89 +380,75 @@
 
     <footer class="page-footer">
         <div class="container">
-            <div class="page-footer__wrapper">
-                <div class="page-footer__subscription">
-                    <h3>The good stuff in your inbox</h3>
-                    <p>News and updates from CH. No spam, we promise.</p>
-                    <form class="page-footer__subscribe-form" method="post" action="#">
-                        <label class="visually-hidden" for="email">Your E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Your E-mail" required="">
-                        <button type="submit">
-                            <span>Sign Up</span>
-                            <svg width="30" height="11" viewBox="0 0 30 11" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="img/sprite_auto.svg#arrow"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-
-                <div class="page-footer__nav"></div>
-                <ul class="page-footer__nav-list">
-                    <li>
-                        <a class="page-footer__nav-link" href="#">Ordering & Payment</a>
-                    </li>
-                    <li>
-                        <a class="page-footer__nav-link" href="#">Terms & Conditions</a>
-                    </li>
-                    <li>
-                        <a class="page-footer__nav-link" href="#">Returns & Exchanges</a>
-                    </li>
-                    <li>
-                        <a class="page-footer__nav-link" href="#">Delivery</a>
-                    </li>
-                </ul>
-
-                <ul class="page-footer__nav-list">
-                    <li>
-                        <a class="page-footer__nav-link" href="#">About CH</a>
-                    </li>
-                    <li>
-                        <a class="page-footer__nav-link" href="#">Stores & Hours</a>
-                    </li>
-                    <li>
-                        <a class="page-footer__nav-link" href="#">Jobs</a>
-                    </li>
-                    <li>
-                        <a class="page-footer__nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
+          <div class="page-footer__wrapper">
+            <div class="page-footer__subscription">
+              <h3>The good stuff in your inbox</h3>
+              <p>News and updates from CH. No spam, we promise.</p>
+              <form class="page-footer__subscribe-form" method="post" action="#">
+                <label class="visually-hidden" for="email">Your E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Your E-mail" required="">
+                <button type="submit">
+                  <span>Sign Up</span>
+                  <svg width="29" height="9" viewBox="0 0 29 9" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite_auto.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </form>
             </div>
-            <ul class="page-footer__social social">
+            <div class="page-footer__nav">
+              <ul class="page-footer__nav-list">
+                <li>
+                  <a class="page-footer__nav-link" href="#">Ordering & Payment</a>
+                </li>
+                <li>
+                  <a class="page-footer__nav-link" href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a class="page-footer__nav-link" href="#">Returns & Exchanges</a>
+                </li>
+                <li>
+                  <a class="page-footer__nav-link" href="#">Delivery</a>
+                </li>
+              </ul>
+    
+              <ul class="page-footer__nav-list">
+                <li>
+                  <a class="page-footer__nav-link" href="#">About CH</a>
+                </li>
+                <li>
+                  <a class="page-footer__nav-link" href="#">Stores & Hours</a>
+                </li>
+                <li>
+                  <a class="page-footer__nav-link" href="#">Jobs</a>
+                </li>
+                <li>
+                  <a class="page-footer__nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+    
+              <ul class="page-footer__social social">
                 <li class="social__item social__item--facebook">
-                    <a href="#">
-                        <svg width="8" height="15" viewBox="0 0 8 15" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
-                        </svg>
-                        <span>Facebook</span>
-                    </a>
+                  <a href="#"><svg width="8" height="15" viewBox="0 0 8 15" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                    </svg><span>Facebook</span></a>
                 </li>
                 <li class="social__item social__item--instagram">
-                    <a href="#">
-                        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
-                        </svg>
-                        <span>Instagram</span>
-                    </a>
+                  <a href="#"><svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite_auto.svg#icon-instagram"></use></svg><span>Instagram</span></a>
                 </li>
                 <li class="social__item social__item--pinterest">
-                    <a href="#">
-                        <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
-                        </svg>
-                        <span>Pinterest</span>
-                    </a>
+                  <a href="#"><svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
+                    </svg><span>Pinterest</span></a>
                 </li>
                 <li class="social__item social__item--twitter">
-                    <a href="#">
-                        <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
-                        </svg>
-                        <span>Twitter</span>
-                    </a>
+                  <a href="#"><svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+                    </svg><span>Twitter</span></a>
                 </li>
-            </ul>
+              </ul>
+            </div>
+    
+          </div>
         </div>
-    </footer>
+      </footer>
 </body>
 
 </html>

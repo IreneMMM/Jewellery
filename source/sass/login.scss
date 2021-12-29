@@ -1,0 +1,156 @@
+.login {
+    position: relative;
+}
+
+.login__wrapper {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 430px;
+    background-color: $light-brown;
+    box-shadow: 0px 5px 32px rgba(226, 221, 215, 0.24);
+    background-image: url("../img/login-bg.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: auto 138px;
+    padding: 138px 45px 55px;
+    box-sizing: border-box;
+    text-align: center;
+
+    @media (min-resolution:2dppx) {
+        background-image: url("../img/login-bg@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+        top: 80px;
+        width: 442px;
+        padding: 138px 51px 55px;
+        background-image: url("../img/login-bg-tablet.jpg");
+
+        @media (min-resolution:2dppx) {
+            background-image: url("../img/login-bg-tablet@2x.jpg");
+        }
+    }
+
+    @media (max-width: $mobile-width) {
+        top: 50px;
+        width: 270px;
+        padding: 84px 15px 35px;
+        background-image: url("../img/login-bg-mobile.jpg");
+        background-size: auto 84px;
+
+        @media (min-resolution:2dppx) {
+            background-image: url("../img/login-bg-mobile@2x.jpg");
+        }
+    }
+}
+
+.login-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    @include title;
+    margin-top: 60px;
+    margin-bottom: 45px;
+
+    @media (max-width: $mobile-width) {
+        font-size: 24px;
+        line-height: 31px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.login-form input {
+    font-family: "Poppins", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $basic-grey;
+    width: 100%;
+    padding: 0 0 8px;
+    border: none;
+    border-bottom: 1px solid $dark-grey;
+    background-color: inherit;
+
+    &:hover, 
+    &:focus {
+        opacity: 0.5;
+        outline: none;
+    }
+
+    &::placeholder {
+        opacity: 0.5;
+    }
+}
+
+.login-form__field:not(:last-child) {
+    margin-bottom: 40px;
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 25px;
+    }
+}
+
+.login-form__field a {
+    display: block;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $basic-grey;
+    text-align: right;
+    margin-top: 10px;
+    text-decoration: none;
+
+    @media (max-width: $mobile-width) {
+        margin-top: 5px;
+    }
+
+    &:hover, 
+    &:focus {
+        opacity: 0.5;
+    }
+}
+
+.login-form button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login-form p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $basic-grey;
+    margin: 0;
+}
+
+.login-form p a {
+    color: $dark-grey;
+    margin-left: 5px;
+    text-decoration: none;
+
+    &:hover, 
+    &:focus {
+        opacity: 0.5;
+    }
+}
+
+.login__close-button {
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}

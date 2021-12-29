@@ -1,0 +1,26 @@
+.search input {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    border: none;
+    padding: 5px;
+
+    &:hover,
+    &:focus {
+        outline: 1px solid $basic-brown;
+    }
+}
+
+.search__button {
+    display: flex;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    background-image: url(../img/icon-search.svg);
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}

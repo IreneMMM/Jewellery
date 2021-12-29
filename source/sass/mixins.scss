@@ -1,0 +1,29 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin basic-font {
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+@mixin title {
+  font-family: "CormorantGaramond", "Georgia", serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+@mixin title-large {
+  font-family: "CormorantGaramond", "Georgia", serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}

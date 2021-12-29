@@ -22,20 +22,33 @@
 
 <body class="page">
     <header class="page-header page-header--nojs">
-        <div class="page-header__search search">
-            <button type="submit" class="search__button"><span class="visually-hidden">Поиск по странице</span></button>
-            <input type="text" placeholder="Type here to search">
-        </div>
-        <a class="page-header__logo" href="index.html">
-            <img src="img/icon-logo.svg" width="66" height="66" alt="Go to main page of interner-shop of jewellery CH">
-        </a>
-        <a class="page-header__login" href="#">Login</a>
-        <a class="page-header__cart" href="#">Cart</a>
+        <div class="container">
+            <div class="page-header__top-nav">
+                <button class="main-nav__toggle main-nav__toggle--no-js" type="button"></button>
+                <div class="page-header__search search">
+                    <button type="submit" class="search__button"><span class="visually-hidden">Поиск по
+                            странице</span></button>
+                    <input type="text" placeholder="Type here to search">
+                </div>
+                <a class="page-header__logo" href="index.html">
+                    <img src="img/icon-logo.svg" width="66" height="66"
+                        alt="Main page of interner-shop of jewellery CH">
+                </a>
+                <div class="page-header__user-menu">
+                    <a class="page-header__login" href="login.html">Login</a>
+                    <a class="page-header__cart" href="cart.html">
+                        <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                        </svg>
+                        <span>Cart</span>
+                    </a>
+                </div>
+            </div>
     </header>
     <main>
         <h1 class="visually-hidden">Jewellery shop login</h1>
         <section class="login login--opened">
-            <div class="modal">
+            <div class="login__wrapper">
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
                     <h2>Log In</h2>
                     <div class="login-form__field">
@@ -47,10 +60,10 @@
                         <input type="password" name="password" id="password" placeholder="Password" required="">
                         <a href="#">Forgot your password?</a>
                     </div>
-                    <button class="login-form__button button button--primary" type="submit">Log In</button>
-                    <p class="login-form__text">Don’t have an account?<a href="#">Sign up</a></p>
+                    <button class="button" type="submit">Log In</button>
+                    <p>Don’t have an account?<a href="#">Sign up</a></p>
                 </form>
-                <button class="modal__close-button" aria-label="Close"></button>
+                <button class="login__close-button" aria-label="Close"></button>
             </div>
         </section>
     </main>
