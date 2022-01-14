@@ -5,22 +5,20 @@
     font-weight: 500;
     line-height: 21px;
     border: none;
-    padding: 5px;
+    padding: 10px 12px 10px 30px;
 
     &:hover,
     &:focus {
-        outline: 1px solid $basic-brown;
+        color: $basic-brown;
     }
 }
 
-.search__button {
-    display: flex;
-    padding: 0;
+.search svg {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+    fill: $basic-black;
     width: 14px;
     height: 14px;
-    background-color: transparent;
-    background-image: url(../img/icon-search.svg);
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
 }

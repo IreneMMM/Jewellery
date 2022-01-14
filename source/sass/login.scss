@@ -1,10 +1,19 @@
 .login {
-    position: relative;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .login__wrapper {
     position: absolute;
-    top: 100px;
+    top: 4%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 430px;
@@ -54,8 +63,8 @@
 
 .login-form h2 {
     @include title;
-    margin-top: 60px;
-    margin-bottom: 45px;
+    margin-top: 50px;
+    margin-bottom: 33px;
 
     @media (max-width: $mobile-width) {
         font-size: 24px;
@@ -77,7 +86,7 @@
     border-bottom: 1px solid $dark-grey;
     background-color: inherit;
 
-    &:hover, 
+    &:hover,
     &:focus {
         opacity: 0.5;
         outline: none;
@@ -89,7 +98,7 @@
 }
 
 .login-form__field:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 
     @media (max-width: $mobile-width) {
         margin-bottom: 25px;
@@ -104,14 +113,14 @@
     line-height: 18px;
     color: $basic-grey;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 5px;
     text-decoration: none;
 
     @media (max-width: $mobile-width) {
         margin-top: 5px;
     }
 
-    &:hover, 
+    &:hover,
     &:focus {
         opacity: 0.5;
     }
@@ -119,7 +128,7 @@
 
 .login-form button {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .login-form p {
@@ -135,7 +144,7 @@
     margin-left: 5px;
     text-decoration: none;
 
-    &:hover, 
+    &:hover,
     &:focus {
         opacity: 0.5;
     }
@@ -153,4 +162,31 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
+
+    &:hover {
+        outline: 2px solid $basic-brown;
+        outline-offset: 5px;
+    }
+}
+
+
+.login--opened {
+    display: block;
+}
+
+.overlay--show {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(86, 64, 52, .7);
 }

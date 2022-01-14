@@ -58,6 +58,7 @@
     "concat": "^1.0.3",
     "del": "^4.1.1",
     "postcss-scss": "^4.0.2",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "swiper": "^7.4.1"
   }
 }
