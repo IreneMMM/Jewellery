@@ -1,0 +1,61 @@
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $dark-grey;
+  background-color: $basic-white;
+  overflow: hidden;
+}
+
+.page--disabled {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 98px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.page-footer {
+  flex-shrink: 0;
+}

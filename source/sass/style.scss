@@ -1,3 +1,27 @@
-h1 {
-  color: red;
-}
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "mixins.scss";
+
+// Блоки
+@import "button.scss";
+@import "login.scss";
+@import "page-header.scss";
+@import "search.scss";
+@import "main-nav.scss";
+@import "promo.scss";
+@import "catalog-promo.scss";
+@import "catalog.scss";
+@import "filter.scss";
+@import "new-goods.scss";
+@import "slider.scss";
+@import "blog.scss";
+@import "faq.scss";
+@import "gallery.scss";
+@import "pagination.scss";
+@import "pagination-catalog.scss";
+@import "page-footer.scss";
+@import "social.scss";
+
+// @import "modal.scss
