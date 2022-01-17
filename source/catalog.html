@@ -22,28 +22,30 @@
 
 <body class="page">
     <header class="page-header page-header--closed page-header--nojs">
-        <div class="container">
-            <div class="page-header__top-nav">
+        <div class="page-header__top-nav">
+            <div class="container page-header__top-nav-wrapper">
                 <button class="page-header__toggle page-header__toggle--no-js" type="button"></button>
 
                 <form class="page-header__search search" action="https://echo.htmlacademy.ru/" method="post">
                     <label for="search">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <svg class="search__icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <use xlink:href="img/sprite_auto.svg#icon-search"></use>
                         </svg>
-                        <input type="search" name="search" id="search" placeholder="Type here to search">
+                        <input class="search__input" type="search" name="search" id="search"
+                            placeholder="Type here to search">
                     </label>
                 </form>
-
-                <a class="page-header__logo" href="index.html" aria-label="Go to the main page of CH Jewellery shop">
-                    <svg width="66" height="66" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <a class="page-header__logo" href="main.html">
+                    <svg class="page-header__logo-img" width="66" height="66" viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
                     </svg>
                 </a>
                 <div class="page-header__user-menu">
                     <a class="page-header__login" href="login.html">Login</a>
                     <a class="page-header__cart" href="cart.html">
-                        <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="page-header__cart-img" width="20" height="18" viewBox="0 0 20 18"
+                            xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
                         </svg>
                         <span>Cart</span>
@@ -51,8 +53,10 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-            <nav class="page-header__main-nav main-nav main-nav--no-js">
+        <nav class="page-header__main-nav">
+            <div class="page-header__main-nav-wrapper main-nav main-nav--no-js container">
                 <ul class="main-nav__list main-nav__list--no-js">
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="#">What’s new</a>
@@ -82,11 +86,10 @@
                     </li>
                 </ul>
                 <div class="main-nav__login">
-                    <a href="login.html">Login</a>
+                    <a class="main-nav__link main-nav__link--login" href="login.html">Login</a>
                 </div>
-
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main class="page-main">
         <h1 class="visually-hidden">Catalog of jewellery shop CH</h1>
@@ -104,7 +107,7 @@
                 <div class="filter__wrapper filter__wrapper--close">
                     <button type="button" class="filter__button-close">
                         <span class="visually-hidden">Close filters window</span>
-                      </button>
+                    </button>
                     <form class="filter__form" method="get" action="https://echo.htmlacademy.ru/">
                         <ul class="filter__list">
                             <li class="filter__item">
@@ -116,26 +119,26 @@
                                     <div class="filter__item-content filter__item-content--active">
                                         <ul>
                                             <li>
-                                                <input type="checkbox" name="necklaces" id="necklaces" checked>
-                                                <label for="necklaces" tabindex="0">
+                                                <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked>
+                                                <label for="necklaces">
                                                     Necklaces
                                                 </label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="chokers" id="chokers" checked>
-                                                <label for="chokers" tabindex="0">
+                                                <input class="visually-hidden" type="checkbox" name="chokers" id="chokers" checked>
+                                                <label for="chokers">
                                                     Chokers
                                                 </label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="rings" id="rings">
-                                                <label for="rings" tabindex="0">
+                                                <input class="visually-hidden" type="checkbox" name="rings" id="rings">
+                                                <label for="rings">
                                                     Rings
                                                 </label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="earrings" id="earrings" checked>
-                                                <label for="earrings" tabindex="0">
+                                                <input class="visually-hidden" type="checkbox" name="earrings" id="earrings" checked>
+                                                <label for="earrings">
                                                     Earrings
                                                 </label>
                                             </li>
@@ -152,14 +155,14 @@
                                     <div class="filter__item-content">
                                         <ul>
                                             <li>
-                                                <input type="checkbox" name="gold" id="gold">
-                                                <label for="gold" tabindex="0">
+                                                <input class="visually-hidden" type="checkbox" name="gold" id="gold">
+                                                <label for="gold">
                                                     Gold
                                                 </label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="silver" id="silver">
-                                                <label for="silver" tabindex="0">
+                                                <input class="visually-hidden" type="checkbox" name="silver" id="silver">
+                                                <label for="silver">
                                                     Silver
                                                 </label>
                                             </li>
@@ -176,14 +179,14 @@
                                     <div class="filter__item-content">
                                         <ul>
                                             <li>
-                                                <input type="checkbox" name="pink-flamingo" id="pink-flamingo">
-                                                <label for="pink-flamingo" tabindex="0">
+                                                <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo">
+                                                <label for="pink-flamingo">
                                                     Pink flamingo
                                                 </label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name="dreams" id="dreams">
-                                                <label for="dreams" tabindex="0">
+                                                <input class="visually-hidden" type="checkbox" name="dreams" id="dreams">
+                                                <label for="dreams">
                                                     Dreams
                                                 </label>
                                             </li>
@@ -202,12 +205,14 @@
                                             <div class="filter__price-scale">
                                                 <div class="filter__price-bar"></div>
                                             </div>
-                                            <div class="filter__price-toggle filter__price-toggle--min" tabindex="0">
+                                            <button class="filter__price-toggle filter__price-toggle--min"
+                                                type="button">
                                                 <span>$&nbsp;55</span>
-                                            </div>
-                                            <div class="filter__price-toggle filter__price-toggle--max" tabindex="0">
+                                            </button>
+                                            <button class="filter__price-toggle filter__price-toggle--max"
+                                                type="button">
                                                 <span>$&nbsp;155</span>
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -518,9 +523,9 @@
                     <a href="#">Forgot your password?</a>
                 </div>
                 <button class="button" type="submit">Log In</button>
-                <p>Don’t have an account?<a href="#">Sign up</a></p>
+                <p>Don’t have an account?<a class="login-form__link" href="#">Sign up</a></p>
             </form>
-            <button class="login__close-button" aria-label="Close"></button>
+            <button class="login__close-button" type="button" aria-label="Close"></button>
         </div>
         <div class="overlay overlay--show"></div>
     </section>

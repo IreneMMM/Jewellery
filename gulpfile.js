@@ -38,6 +38,12 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest('build/js'));
 });
 
+gulp.task("vendor", function() {
+  return gulp.src(['node_modules/swiper/swiper-bundle.min.js'])
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('build/js'));
+});
+
 gulp.task('server', function () {
   server.init({
     server: 'build/',
@@ -102,7 +108,6 @@ gulp.task('html', function () {
 gulp.task('copy', function () {
   return gulp.src([
     'source/fonts/**/*.{woff,woff2}',
-    'source/js/**',
     'source//*.ico'
   ], {
     base: 'source'
@@ -114,5 +119,5 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'images', 'scripts', 'webp', 'sprite', 'html'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'images', 'scripts', 'vendor', 'webp', 'sprite', 'html'));
 gulp.task('start', gulp.series('build', 'server'));

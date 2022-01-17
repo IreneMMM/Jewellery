@@ -1,0 +1,28 @@
+.page-menu {
+  @include add-font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.page-menu__list {
+  @include list-reset;
+}
+
+.page-menu h2 {
+  margin: 20px auto;
+}
+
+.page-menu a {
+  text-decoration: none;
+  color: $basic-brown;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $basic-brown;
+  }
+}

@@ -1,0 +1,24 @@
+.search__input {
+  @include basic-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  border: none;
+  padding: 10px 12px 10px 30px;
+
+  &:hover,
+  &:focus {
+    color: $basic-brown;
+  }
+}
+
+.search__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  fill: $basic-black;
+  width: 14px;
+  height: 14px;
+}
