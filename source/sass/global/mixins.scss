@@ -8,6 +8,10 @@
   font-family: "Poppins", "Arial", sans-serif;
 }
 
+@mixin add-font {
+  font-family: "CormorantGaramond", "Georgia", serif;
+}
+
 @mixin title {
   font-family: "CormorantGaramond", "Georgia", serif;
   font-size: 34px;

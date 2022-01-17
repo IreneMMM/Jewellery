@@ -3,14 +3,20 @@ html {
   box-sizing: border-box;
 }
 
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
 .page {
+  @include basic-font;
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: $dark-grey;
@@ -58,4 +64,8 @@ img {
 
 .page-footer {
   flex-shrink: 0;
+}
+
+.page-no-scroll {
+  overflow: hidden;
 }
