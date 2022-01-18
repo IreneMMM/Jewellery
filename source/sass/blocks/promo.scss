@@ -44,13 +44,21 @@
   position: relative;
   z-index: 3;
   color: $basic-white;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .promo__info p {
   @include title-large;
   text-transform: uppercase;
 
+  @media (max-width: $tablet-width) {
+    margin-left: -20px;
+    margin-bottom: -7px;
+  }
+
   @media (max-width: $mobile-width) {
+    margin-left: 0;
     font-size: 38px;
     line-height: 49px;
   }

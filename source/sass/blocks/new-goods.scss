@@ -1,26 +1,25 @@
 .new-goods {
-  padding-top: 130px;
+  padding-top: 120px;
   text-align: center;
-  margin-bottom: 110px;
+  margin-bottom: 117px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 70px;
+    margin-bottom: 68px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 70px;
-    margin-bottom: 70px;
+    padding-top: 60px;
+    margin-bottom: 48px;
   }
 }
 
 .new-goods h2 {
   @include title;
   color: $dark-grey;
-  margin-bottom: 13px;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -28,8 +27,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 25px;
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 
   @media (max-width: $mobile-width) {
     display: none;
@@ -48,16 +51,22 @@
   height: 50px;
   color: transparent;
   background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width) {
+    width: 36px;
+  }
 }
 
 .new-goods__button--prev {
   background-image: url("../img/arrow-prev.svg");
   left: 0;
+  background-size: contain;
 }
 
 .new-goods__button--next {
   background-image: url("../img/arrow-next.svg");
   right: 0;
+  background-size: contain;
 }
 
 .new-goods a {
@@ -76,6 +85,11 @@
   color: $dark-grey;
   text-decoration: none;
   outline: 0;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 3px;
+    margin-bottom: 50px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 40px;
@@ -118,13 +132,17 @@
   }
 }
 
+.new-goods__item a {
+  width: 100%;
+}
+
 .new-goods__item h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
   text-align: center;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .new-goods__item p {
@@ -138,5 +156,9 @@
 .new-goods__item img {
   width: 100%;
   height: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
 }
