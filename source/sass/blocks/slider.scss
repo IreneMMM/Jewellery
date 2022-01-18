@@ -18,21 +18,31 @@
   object-fit: cover;
 }
 
-.swiper-pagination .swiper-pagination-bullet {
+.swiper-pagination-bullet {
+  display: block;
   opacity: 1;
   background-color: $basic-white;
   margin: 0 6px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 12px;
+  }
 
   @media (max-width: $mobile-width) {
     margin: 0 10px;
   }
 }
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+}
+
 .swiper-wrapper {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-width) {

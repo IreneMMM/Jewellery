@@ -12,11 +12,10 @@
 
 .main-nav__link {
   display: block;
-  padding: 10px;
   color: inherit;
 }
 
-.main-nav__item {
+.main-nav__item:not(:last-child) {
   margin-right: 35px;
 }
 
