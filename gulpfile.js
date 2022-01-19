@@ -33,13 +33,13 @@ gulp.task('css', function () {
 });
 
 gulp.task('scripts', function () {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/modules/*.js')
     .pipe(concat('script.js'))
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task("vendor", function() {
-  return gulp.src(['node_modules/swiper/swiper-bundle.min.js'])
+gulp.task("vendor", function () {
+  return gulp.src(['source/js/vendor/*.js'])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('build/js'));
 });

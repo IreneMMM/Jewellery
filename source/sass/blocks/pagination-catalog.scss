@@ -16,6 +16,10 @@
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+  }
 }
 
 .pagination-catalog__inner {
@@ -91,6 +95,10 @@
 
 .pagination-catalog__item:not(:last-child) {
   margin-right: 10px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 19px;
+  }
 }
 
 .pagination-catalog__item--current {

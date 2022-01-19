@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 20px 0 0;
+    padding: 17px 0 0;
   }
 }
 
@@ -46,7 +46,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 13px;
+    padding-bottom: 16px;
   }
 }
 
@@ -151,6 +151,7 @@
     right: 0;
     z-index: 99;
     animation: swing-in-top-fwd 1s cubic-bezier(0.17, 0.88, 0.32, 1.27) both;
+    overflow: auto;
   }
 }
 

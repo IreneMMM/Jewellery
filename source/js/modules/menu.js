@@ -1,5 +1,5 @@
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+const pageHeader = document.querySelector('.page-header');
+const headerToggle = document.querySelector('.page-header__toggle');
 
 pageHeader.classList.remove('page-header--nojs');
 

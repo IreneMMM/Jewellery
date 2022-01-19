@@ -14,7 +14,7 @@
 .login__wrapper {
   display: block;
   position: absolute;
-  top: 3%;
+  top: 0;
   left: 50%;
   transform: translate(-50%, 0);
   width: 430px;
@@ -170,5 +170,4 @@
 
 .login--opened {
   display: block;
-  top: 10%;
 }
