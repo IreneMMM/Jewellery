@@ -48,7 +48,7 @@
     filterToggle.forEach(function (item) {
       item.addEventListener('click', function (evt) {
         evt.preventDefault();
-        item.closest('.filter__item').classList.toggle('filter__item--active');   
+        item.closest('.filter__item').classList.toggle('filter__item--active');
       });
     });
   }

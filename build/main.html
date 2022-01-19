@@ -22,7 +22,7 @@
   <header class="page-header page-header--closed page-header--nojs">
     <div class="page-header__top-nav">
       <div class="container page-header__top-nav-wrapper">
-        <button class="page-header__toggle page-header__toggle--no-js" type="button"></button>
+        <button class="page-header__toggle page-header__toggle--no-js" type="button" aria-label="Show menu"></button>
 
         <form class="page-header__search search" action="https://echo.htmlacademy.ru/" method="post">
           <label for="search">
@@ -39,7 +39,7 @@
         </a>
         <div class="page-header__user-menu">
           <a class="page-header__login" href="login.html">Login</a>
-          <a class="page-header__cart" href="cart.html">
+          <a class="page-header__cart" href="cart.html" aria-label="Go to the cart">
             <svg class="page-header__cart-img" width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
             </svg>
@@ -495,7 +495,7 @@
         <button class="button" type="submit">Log In</button>
         <p>Don’t have an account?<a class="login-form__link" href="#">Sign up</a></p>
       </form>
-      <button class="login__close-button" type="button" aria-label="Close"></button>
+      <button class="login__close-button" type="button" aria-label="Close login form"></button>
     </div>
     <div class="overlay"></div>
   </section>
