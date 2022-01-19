@@ -105,18 +105,16 @@
                 <h3 class="visually-hidden">Catalog filter</h3>
                 <a class="filter__toggle-button filter__toggle-button--open button" href="filter.html">Filter</a>
                 <div class="filter__wrapper filter__wrapper--close">
-                    <button type="button" class="filter__button-close">
-                        <span class="visually-hidden">Close filters window</span>
-                    </button>
+
                     <form class="filter__form" method="get" action="https://echo.htmlacademy.ru/">
                         <ul class="filter__list">
-                            <li class="filter__item">
+                            <li class="filter__item filter__item--active">
                                 <fieldset>
-                                    <legend class="filter__toggle filter__toggle--active">
+                                    <legend class="filter__toggle">
                                         <span>Product</span>
-                                        <button type="button"><span class="visually-hidden">View filter</span></button>
+                                        <button class="filter__toggle-arrow" type="button"><span class="visually-hidden">View filter</span></button>
                                     </legend>
-                                    <div class="filter__item-content filter__item-content--active">
+                                    <div class="filter__item-content">
                                         <ul>
                                             <li>
                                                 <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked>
@@ -150,7 +148,7 @@
                                 <fieldset>
                                     <legend class="filter__toggle">
                                         <span>Material</span>
-                                        <button type="button"><span class="visually-hidden">View filter</span></button>
+                                        <button class="filter__toggle-arrow" type="button"><span class="visually-hidden">View filter</span></button>
                                     </legend>
                                     <div class="filter__item-content">
                                         <ul>
@@ -174,7 +172,7 @@
                                 <fieldset>
                                     <legend class="filter__toggle">
                                         <span>Collection</span>
-                                        <button type="button"><span class="visually-hidden">View filter</span></button>
+                                        <button class="filter__toggle-arrow" type="button"><span class="visually-hidden">View filter</span></button>
                                     </legend>
                                     <div class="filter__item-content">
                                         <ul>
@@ -194,11 +192,11 @@
                                     </div>
                                 </fieldset>
                             </li>
-                            <li class="filter__item">
+                            <li class="filter__item filter__item--active">
                                 <fieldset>
                                     <legend class="filter__toggle">
                                         <span>Price</span>
-                                        <button type="button"><span class="visually-hidden">View filter</span></button>
+                                        <button class="filter__toggle-arrow" type="button"><span class="visually-hidden">View filter</span></button>
                                     </legend>
                                     <div class="filter__price filter__item-content">
                                         <div class="filter__price-wrapper">
@@ -218,13 +216,18 @@
                                 </fieldset>
                             </li>
                         </ul>
+
                         <button class="filter__submit button" type="submit">
                             Apply
                         </button>
-                        <button class="filter__reset button" type="button">
+                        <button class="filter__reset button" type="reset">
                             Clear all
                         </button>
+                        <button type="button" class="filter__button-close">
+                            <span class="visually-hidden">Close filters window</span>
+                        </button>
                     </form>
+
                 </div>
             </section>
             <section class="catalog">

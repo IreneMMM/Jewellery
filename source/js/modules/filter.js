@@ -2,18 +2,20 @@
   const filterOpenButton = document.querySelector('.filter__toggle-button--open');
   const filterCloseButton = document.querySelector('.filter__button-close');
   const filters = document.querySelector('.filter__wrapper');
-  const page = document.querySelector('html');
+  const page = document.querySelector('body');
+
   const showFilters = (evt) => {
     evt.preventDefault();
+    page.classList.add('page--disabled');
     filters.classList.add('filter__wrapper--open');
     filters.classList.remove('filter__wrapper--close');
-    page.classList.add('page--disabled');
   };
+
   const closeFilters = (evt) => {
     evt.preventDefault();
+    page.classList.remove('page--disabled');
     filters.classList.add('filter__wrapper--close');
     filters.classList.remove('filter__wrapper--open');
-    page.classList.remove('page--disabled');
   };
 
   if (filterOpenButton) {
@@ -32,6 +34,21 @@
   if (clearFormButton) {
     clearFormButton.addEventListener('click', () => {
       filtersForm.reset();
+    });
+  }
+})();
+
+(function () {
+  const filterList = document.querySelector('.filter__list');
+
+  if (filterList) {
+    const filterToggle = filterList.querySelectorAll('.filter__item');
+
+    filterToggle.forEach(function (item) {
+      item.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        item.classList.toggle('filter__item--active');
+      });
     });
   }
 })();

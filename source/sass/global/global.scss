@@ -1,5 +1,4 @@
 html {
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -21,10 +20,10 @@ html {
   font-weight: 400;
   color: $dark-grey;
   background-color: $basic-white;
-  overflow: hidden;
 }
 
 .page--disabled {
+  position: fixed;
   overflow: hidden;
 }
 
@@ -64,8 +63,4 @@ img {
 
 .page-footer {
   flex-shrink: 0;
-}
-
-.page-no-scroll {
-  overflow: hidden;
 }

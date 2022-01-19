@@ -1,20 +1,20 @@
 'use strict';
 
 (function () {
-  var KEYCODE = {
+  const KEYCODE = {
     esc: 27
   };
-  var page = document.querySelector('html');
-  var buttonLogin = document.querySelector('.page-header__login');
+  const page = document.querySelector('html');
+  const buttonLogin = document.querySelector('.page-header__login');
 
-  var modal = document.querySelector('.login');
-  var close = modal.querySelector('.login__close-button');
+  const modal = document.querySelector('.login');
+  const close = modal.querySelector('.login__close-button');
   const overlay = modal.querySelector('.overlay');
-  var form = modal.querySelector('.login-form');
-  var userMale = modal.querySelector('input[type="email"]');
-  var password = modal.querySelector('input[password]');
-  var isStorageSupport = true;
-  var storage = '';
+  const form = modal.querySelector('.login-form');
+  const userMale = modal.querySelector('input[type="email"]');
+  const password = modal.querySelector('input[password]');
+  let isStorageSupport = true;
+  const storage = '';
 
   try {
     storage = localStorage.getItem('userMale');
@@ -22,19 +22,19 @@
     isStorageSupport = false;
   }
 
-  var openmodal = function () {
+  const openmodal = function () {
     modal.classList.add('login--opened');
     overlay.classList.add('overlay--show');
     page.classList.add('page--disabled');
   };
 
-  var closemodal = function () {
+  const closemodal = function () {
     modal.classList.remove('login--opened');
     overlay.classList.remove('overlay--show');
     page.classList.remove('page--disabled');
   };
 
-  var closeOnOverlay = function (evt) {
+  const closeOnOverlay = function (evt) {
     evt.preventDefault();
     closePopup();
     overlay.removeEventListener('click', closeOnOverlay);
