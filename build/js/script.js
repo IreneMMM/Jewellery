@@ -42,12 +42,12 @@
   const filterList = document.querySelector('.filter__list');
 
   if (filterList) {
-    const filterToggle = filterList.querySelectorAll('.filter__item');
+    const filterToggle = filterList.querySelectorAll('.filter__toggle');
 
     filterToggle.forEach(function (item) {
       item.addEventListener('click', function (evt) {
         evt.preventDefault();
-        item.classList.toggle('filter__item--active');
+        item.classList.toggle('filter__toggle--active');
       });
     });
   }
