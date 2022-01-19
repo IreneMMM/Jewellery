@@ -111,13 +111,13 @@
   }
 }
 
-.filter__item-content input + label {
+.filter__item-content input+label {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
 }
 
-.filter__item-content input + label::before {
+.filter__item-content input+label::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -129,7 +129,7 @@
   background-color: $basic-white;
 }
 
-.filter__item-content input:checked + label::before {
+.filter__item-content input:checked+label::before {
   background-color: $basic-brown;
 }
 
@@ -289,7 +289,7 @@
   border-bottom: 1px solid $basic-brown;
 }
 
-.filter__item-content input:focus + label::before {
+.filter__item-content input:focus+label::before {
   outline: 1px solid $basic-brown;
   outline-offset: 2px;
 }

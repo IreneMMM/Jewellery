@@ -44,7 +44,6 @@
 
   if (filterList) {
     const filterToggle = filterList.querySelectorAll('.filter__toggle');
-    const filterItem = filterList.querySelectorAll('.filter__item');
 
     filterToggle.forEach(function (item) {
       item.addEventListener('click', function (evt) {
